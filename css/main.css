@@ -1,0 +1,146 @@
+header,footer {
+    font-family: monospace;
+    text-transform: lowercase;
+    background-color: darkmagenta;
+}
+
+header {
+    padding: 8px;
+}
+
+footer {
+    padding: 16px;
+}
+
+header table {
+    width: 100%;
+}
+
+body {
+    counter-reset: h2_counter
+}
+
+h2 {
+    counter-reset: h3_counter
+}
+
+h3 {
+    counter-reset: h4_counter
+}
+
+h4 {
+    counter-reset: h5_counter
+}
+
+h5 {
+    counter-reset: h6_counter
+}
+
+h2::before {
+    counter-increment: h2_counter;
+    content: counter(h2_counter) " ";
+}
+
+h3::before {
+    counter-increment: h3_counter;
+    content: counter(h2_counter) "."counter(h3_counter) " ";
+}
+
+h4::before {
+    counter-increment: h4_counter;
+    content: counter(h2_counter) "."counter(h3_counter) "."counter(h4_counter) " ";
+}
+
+h5::before {
+    counter-increment: h5_counter;
+    content: counter(h2_counter) "."counter(h3_counter) "."counter(h4_counter) "."counter(h5_counter) " ";
+}
+
+h6::before {
+    counter-increment: h6_counter;
+    content: counter(h2_counter) "."counter(h3_counter) "."counter(h4_counter) "."counter(h5_counter) "."counter(h6_counter) " "
+}
+
+h2::before, h3::before, h4::before, h5::before, h6::before {
+    font-size: 50%;
+    letter-spacing: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
+    text-transform: lowercase;
+    text-align: center;
+    color: white;
+    background-color: indigo;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 4px black;
+}
+
+h1 {
+    font-size: 500%;
+    background-color: blueviolet;
+    text-shadow: 0 0 16px black, 4px 4px 8px black;
+}
+
+h1::before {
+    content: "- ";
+}
+
+h1::after {
+    content: " -";
+}
+
+h2 {
+    font-size: 400%;
+}
+
+h3 {
+    font-size: 300%;
+}
+
+h4 {
+    font-size: 250%;
+}
+
+h5 {
+    font-size: 200%;
+}
+
+h6 {
+    font-size: 150%;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 25px;
+}
+
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    text-shadow: 2px 2px 4px black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    background-image: url(../media/background/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial;
+    margin: 25px;
+}
+
+body.high-contrast {
+    background-image: none;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: gray;
+}
