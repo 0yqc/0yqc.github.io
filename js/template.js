@@ -21,7 +21,7 @@ document.getElementById("header").innerHTML =
     "<tr>" +
     "<td>" +
     "<a href=\"\">" +
-    "<img src=\"media/loggo.svg\" alt=\"yQc: yQlormatic\" style=\"width:87px;height:38,5px\">" +
+    "<img src=\"media/logo.svg\" alt=\"yQc: yQlormatic\" style=\"width:87px;height:38,5px\">" +
     "</a>" +
     text_navigator +
     "</td>" +
