@@ -20,7 +20,7 @@ document.getElementById("header").innerHTML =
     "<table>" +
     "<tr>" +
     "<td>" +
-    "<a href=\"\">" +
+    "<a href=\"index.html\">" +
     "<img src=\"media/logo.svg\" alt=\"yQc: yQlormatic\" style=\"width:87px;height:38,5px\">" +
     "</a>" +
     text_navigator +
@@ -34,5 +34,7 @@ document.getElementById("header").innerHTML =
 
 document.getElementById("footer").innerHTML =
     "<footer>" +
-    "<a href=\"credits.html\">Credits</a>" +
+    "<a href=\"credits.html\">Credits</a><br>" +
+    "<a href=\"contact.html\">Contact</a><br>" +
+    "<a href=\"sitemap.html\">Sitemap</a>" +
     "</footer>"

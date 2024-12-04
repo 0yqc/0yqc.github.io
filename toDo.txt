@@ -1,1 +1,0 @@
-Fetch template to every document using js
