@@ -15,26 +15,29 @@ for (i = 0; i < path.length; i++) { //Iterate through every path element
     */
 }
 
-document.getElementById("header").innerHTML =
-    "<header>" +
-    "<table>" +
-    "<tr>" +
-    "<td>" +
-    "<a href=\"index.html\">" +
-    "<img src=\"media/logo.svg\" alt=\"yQc: yQlormatic\" style=\"width:87px;height:38,5px\">" +
-    "</a>" +
-    text_navigator +
-    "</td>" +
-    "<td style=\"text-align: right;\">" +
-    "Last Modified: " + new Date(document.lastModified).toLocaleString("en-US", { month: "short", day: "numeric", year: "numeric" }) +
-    "</td>" +
-    "</tr>" +
-    "</table>" +
-    "</header>"
+document.getElementById("header").innerHTML = `
+<header>
+    <table>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="media/logo.svg" alt="yQc: yQlormatic" style="width:87px;height:38,5px"></a>
+`
+    + text_navigator +
+    `
+            </td>
+            <td style="text-align: right;">
+                Last Modified: ` + new Date(document.lastModified).toLocaleDateString("en-us", {year: "numeric", month: "short", day: "numeric"}) +
+    `</td>
+        </tr>
+    </table>
+</header>
+`
 
-document.getElementById("footer").innerHTML =
-    "<footer>" +
-    "<a href=\"credits.html\">Credits</a><br>" +
-    "<a href=\"contact.html\">Contact</a><br>" +
-    "<a href=\"sitemap.html\">Sitemap</a>" +
-    "</footer>"
+document.getElementById("footer").innerHTML = `
+<footer>
+    <a href="credits.html">Credits</a><br>
+    <a href="contact.html">Contact</a><br>
+    <a href="sitemap.html">Sitemap</a>
+</footer>
+`
