@@ -1,6 +1,6 @@
 console.log("template.js loaded");
 
-fetch("../templates/header.html")
+fetch("https://github.com/0yqc/0yqc.github.io/templates/header.html")
     .then(response => {
         console.log("Response status:", response.status);
         
