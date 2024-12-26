@@ -1,7 +1,9 @@
 # 0yqc.github.io
 
 This is the repository, where my [Github Page (https://0yqc.github.io/)](https://0yqc.github.io/) is hosted from.
-The site is designed to mainly work [online](https://0yqc.github.io/) or on a local server (you need to setup it yourself) If you run this locally you may encounter security problems/errors (eg. Trying to acces other local files) and link problems since on most browsers you need the /index.html at the end.
+
+The site is designed to mainly work [online](https://0yqc.github.io/) or on a local server (you need to setup it yourself)
+If you run this locally you may encounter security problems/errors (eg. Trying to acces other local files) and link problems since on most browsers you need the /index.html at the end.
 
 ## Help Me
 
