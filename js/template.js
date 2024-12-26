@@ -1,3 +1,4 @@
+console.log("template.js loaded")
 fetch("../templates/header.html")
     .then(response => response.text())
     .then(data => {
