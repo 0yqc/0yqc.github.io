@@ -1,4 +1,2 @@
 Hover over Navigator -> List of Subsites
  - Automatic Sitemap
-
- fix template.js
