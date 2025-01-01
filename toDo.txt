@@ -5,3 +5,5 @@ Background Image (Tileable)
     - Dark Stones
 
 /favicon.ico -> Icon Creation
+
+Better Contact (Contact Form?)

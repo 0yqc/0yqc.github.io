@@ -161,6 +161,10 @@ p, ul, li {
     margin-right: 0px;
 }
 
+ul li {
+    background-color: #00000080;
+}
+
 a {
     color: white;
 }
