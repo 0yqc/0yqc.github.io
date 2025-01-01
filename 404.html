@@ -27,7 +27,7 @@
             <li><a href="sitemap">Sitemap</a></li>
             <script>
                 if (window.location.pathname.endsWith(".html")) {
-                    const newPath = window.location.pathname - ".html" + "/"
+                    const newPath = window.location.pathname.replace(".html", "/")
                     console.log(newPath)
                     document.getElementById("html_redirect").innerHTML = "<a href=\""
                 }
