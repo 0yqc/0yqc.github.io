@@ -22,8 +22,16 @@
             I'm sorry, but the page you were looking for does not exist. Try:
         </p>
         <ul>
+            <div id="html_redirect"></div>
             <li><a href="">Home Page</a></li>
             <li><a href="sitemap">Sitemap</a></li>
+            <script>
+                if (window.location.pathname.endsWith(".html")) {
+                    const newPath = window.location.pathname - ".html" + "/"
+                    console.log(newPath)
+                    document.getElementById("html_redirect").innerHTML = "<a href=\"" + 
+                }
+            </script>
         </ul>
     </div>
     <div id="footer"></div>

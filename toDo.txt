@@ -2,3 +2,6 @@ Hover over Navigator -> List of Subsites
  - Automatic Sitemap
 
  fix template.js
+
+ 404 not found base tag
+    .html redirect
