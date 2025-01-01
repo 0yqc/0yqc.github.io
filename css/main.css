@@ -19,6 +19,8 @@ body {
 #content {
     margin: 32px;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {

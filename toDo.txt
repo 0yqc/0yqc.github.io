@@ -1,2 +1,7 @@
 Hover over Navigator -> List of Subsites
- - Automatic Sitemap
+
+Background Image (Tileable)
+    - Offset Zoom
+    - Dark Stones
+
+/favicon.ico -> Icon Creation
