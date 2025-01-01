@@ -161,7 +161,7 @@ p, ul, li {
     margin-right: 0px;
 }
 
-li {
+ul {
     list-style-type: none;
     border-left: 4px white;
     padding-left: 4px;
