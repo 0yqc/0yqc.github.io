@@ -19,8 +19,6 @@ body {
 #content {
     margin: 32px;
     margin-top: 100px;
-
-    min-height: 100vh;
 }
 
 header, footer {
@@ -41,6 +39,7 @@ header {
 
 footer {
     line-height: 200%;
+    position: sticky;
 }
 
 #header {
