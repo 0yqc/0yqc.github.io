@@ -20,7 +20,7 @@ body {
     margin: 32px;
     margin-top: 100px;
 
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 header, footer {
