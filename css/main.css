@@ -161,8 +161,10 @@ p, ul, li {
     margin-right: 0px;
 }
 
-ul li {
-    background-color: #00000080;
+li {
+    list-style-type: none;
+    border-left: 4px white;
+    padding-left: 4px;
 }
 
 a {
