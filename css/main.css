@@ -163,9 +163,8 @@ p, ul, li {
 
 ul {
     list-style-type: none;
-    border-left: 4px white;
+    border-left: 4px solid white;
     padding-left: 4px;
-    color: aqua;
 }
 
 a {
