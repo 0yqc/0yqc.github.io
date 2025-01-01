@@ -22,15 +22,13 @@
             I'm sorry, but the page you were looking for does not exist. Try:
         </p>
         <ul>
-            <div id="html_redirect"></div>
+            <li id="html_redirect"></li>
             <li><a href="">Home Page</a></li>
             <li><a href="sitemap">Sitemap</a></li>
             <script>
                 if (window.location.pathname.endsWith(".html")) {
                     const newPath = window.location.pathname.replace(".html", "/")
-                    console.log(newPath)
-                    document.getElementById("html_redirect").innerHTML = "Test"
-                    // "<a href=\"" + newPath + ">" + newPath + "</a>"
+                    document.getElementById("html_redirect").innerHTML = "<a href=\"" + newPath + "\"">" + newPath + "</a>"
                 }
             </script>
         </ul>
