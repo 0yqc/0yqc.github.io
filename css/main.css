@@ -14,13 +14,13 @@ body {
 
     color: white;
     font-family: Arial;
-
-    min-height: 100%;
 }
 
 #content {
     margin: 32px;
     margin-top: 100px;
+
+    min-height: 100%;
 }
 
 header, footer {
