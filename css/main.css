@@ -8,9 +8,6 @@
 
 body {
     background-image: url(../media/background/main.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 
     color: white;
     font-family: Arial;
