@@ -1,13 +1,9 @@
-:root {
-    --color1: #b00080;
-    --color_h2: #d00040;
-    --color_h3: #800030;
-    --color_h4: #400020;
-    --color3: #400030;
-}
-
 body {
     background-image: url(../media/background/main.jpg);
+    background-color: black;
+    background-size: 25%;
+    background-attachment: ;
+
 
     color: white;
     font-family: Arial;
@@ -25,7 +21,7 @@ body {
 }
 
 header, footer {
-    background-color: var(--color3);
+    background-color: #400030;
     border-radius: 16px;
 }
 
@@ -122,8 +118,8 @@ h2::before, h3::before, h4::before, h5::before, h6::before {
 }
 
 h1 {
-    background-color: var(--color1);
-    box-shadow: 0px 0px 128px var(--color1);
+    background-color: #b00080;
+    box-shadow: 0px 0px 128px #b00080;
     padding: 16px;
     font-family: monospace;
     font-size: 500%;
@@ -137,22 +133,22 @@ h1 {
 
 h2 {
     font-size: 300%;
-    background-color: var(--color_h2);
-    box-shadow: 0px 0px 32px var(--color_h2);
+    background-color: #d00040;
+    box-shadow: 0px 0px 32px #d00040;
     margin-left: 16px;
 }
 
 h3 {
     font-size: 250%;
-    background-color: var(--color_h3);
-    box-shadow: 0px 0px 32px var(--color_h3);
+    background-color: #800030;
+    box-shadow: 0px 0px 32px #800030;
     margin-left: 32px;
 }
 
 h4 {
     font-size: 200%;
-    background-color: var(--color_h4);
-    box-shadow: 0px 0px 32px var(--color_h4);
+    background-color: #400020;
+    box-shadow: 0px 0px 32px #400020;
     margin-left: 64px;
 }
 

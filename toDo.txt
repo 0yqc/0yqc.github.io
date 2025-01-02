@@ -1,8 +1,6 @@
 Hover over Navigator -> List of Subsites
 
-Background Image (Tileable)
-    - Offset Zoom
-    - Dark Stones
+Offset Zoom
 
 /favicon.ico -> Icon Creation
 
