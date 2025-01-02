@@ -36,8 +36,8 @@ document.getElementById("header").innerHTML = `
 
 document.getElementById("footer").innerHTML = `
 <footer>
-    <a href="credits.html">Credits</a><br>
-    <a href="contact.html">Contact</a><br>
-    <a href="sitemap.html">Sitemap</a>
+    <a href="credits">Credits</a><br>
+    <a href="contact">Contact</a><br>
+    <a href="sitemap">Sitemap</a>
 </footer>
 `
