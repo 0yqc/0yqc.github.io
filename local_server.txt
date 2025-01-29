@@ -1,0 +1,1 @@
+python3 -m http.server -d /home/luna/0yqc.github.io/
