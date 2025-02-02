@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -7,15 +8,40 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Contact | 0yqc.github.io</title>
 </head>
+
 <body>
     <div id="header"></div>
     <div id="content">
         <h1>Contact</h1>
-        <p>E-Mail: <a href="mailto:0yqc@duck.com">0yqc@duck.com</a></p>
-        <p>Rebrickable PM: <a href="https://rebrickable.com/users/yQc">to yQc</a></p>
-        <p>All other ways you can</p>
+        <ul>
+            <li>E-Mail: <a href="mailto:0yqc@duck.com?subject=Website">0yqc@duck.com</a></li>
+            <li>Rebrickable PM: <a href="https://rebrickable.com/users/yQc">to yQc</a></li>
+            <li>All other ways you can</li>
+
+            <br>
+            <li>Contact Form:<br><br>
+                <form id="contact_form">
+                    <label for="name">Your Name:¹</label><br>
+                    <input type="text" name="name" id="name" size="32"><br>
+                    <label for="email">Your email adress (for further questions)²</label><br>
+                    <input type="email" name="email" id="email" size="32"><br>
+                    <input type="radio" name="type" id="bug" value="Bug Report"><label for="bug">Bug</label>
+                    <input type="radio" name="type" id="feature" value="Feature Request"><label for="feature">Feature Request</label>
+                    <input type="radio" name="type" id="other" value="Message"><label for="other">Other</label><br>
+                    <label for="message" required>Your message:</label><br>
+                    <textarea name="message" id="message" cols="32" rows="4" style="resize: none;"></textarea><br><br>
+                    <input type="submit" value="Submit Form (Opens Mail Program)">
+                    <p>
+                        ¹: The Name you want me to call you. May be empty. <br>
+                        ²: If different from the email you send from. May be empty.
+                    </p>
+                </form>
+            </li>
+        </ul>
+        <script src="js/contact_form.js"></script>
     </div>
     <div id="footer"></div>
     <script src="js/template.js"></script>
 </body>
+
 </html>
