@@ -186,7 +186,15 @@ input:focus {
 
 input[type=radio] {
     width: 16px;
+}
 
+input[type=color] {
+    height: 64px;
+}
+
+input[type=color]:focus {
+    height: 64px;
+    margin: 8px;
 }
 
 textarea {
@@ -223,4 +231,8 @@ select {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.hidden {
+    display: none;
 }

@@ -6,7 +6,5 @@ document.getElementById("contact_form").addEventListener("submit", function (eve
     const unformatedMessage = document.getElementById("message").value
     var message = unformatedMessage.replace(/\n/g, '%0D%0A');
 
-    console.log(name + email + type + message)
-
     window.location.href = "mailto:0yqc@duck.com?subject=Website " + type + " by " + name + " (" + email + ")&body=" + message
 })

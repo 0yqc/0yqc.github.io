@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -7,20 +8,23 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Survey | 0yqc.github.io</title>
 </head>
+
 <body>
     <div id="header"></div>
     <div id="content">
         <h1>Survey</h1>
         <div class="center">
             <div>
-                <form>
+                <form id="survey">
                     Please note that all fields are optional. <br><br>
                     <label for="fname">Your First Name:</label><br>
                     <input type="text" name="fname" id="fname"><br>
                     <label for="lname">Your Last Name:</label><br>
-                    <input type="text" name="lname" id="lnmae"><br>
+                    <input type="text" name="lname" id="lname"><br>
                     <label for="age">Your Age:</label><br>
                     <input type="text" name="age" id="age"><br>
+                    <label for="birth">Your Birthday:</label><br>
+                    <input type="date" name="birth" id="birth"><br>
                     <label for="gender">Your Gender¹:</label><br>
                     <select name="gender" id="gender">
                         <option value="female">Female</option>
@@ -28,11 +32,12 @@
                         <option value="non-binary">Non-Binary</option>
                         <option value="genderFluid">Gender-Fluid</option>
                         <option value="inter">Inter*</option>
-                        <option value="other">Other</option>
+                        <option value="other">Other, this:</option>
                         <option value="noAnswer" selected>No Answer</option>
                     </select><br>
+                    <input type="text" name="gender_other" id="gender_other" class="hidden"><br>
                     <label for="continent">Your Continent²:</label><br>
-                    <select name="content" id="continent"><br>
+                    <select name="continent" id="continent"><br>
                         <option value="asia">Asia</option>
                         <option value="africa">Africa</option>
                         <option value="europe">Europe</option>
@@ -40,16 +45,20 @@
                         <option value="southAmerica">South America</option>
                         <option value="oceanina">Oceania</option>
                         <option value="antarctica">Antarctica</option>
-                        <option value="dumb">US</option>
+                        <option value="us">US</option>
                         <option value="noAnswer" selected>No Answer</option>
                     </select><br>
                     <label for="country">Your Country:</label><br>
                     <input type="text" name="country" id="country"><br>
                     <label for="city">Your City:</label><br>
-                    <input type="text" name="city" id="city">
+                    <input type="text" name="city" id="city"><br>
+                    <label for="color">Your favorite Color:</label><br>
+                    <input type="color" name="color" id="color"><br>
+                    <label for="message">Your Random Message:</label><br>
+                    <textarea name="message" id="message"></textarea><br>  
                     <input type="submit" value="Submit Survey (Opens Mail Program)"><br>
                     ¹: I respect your choosen gender <br>
-                    ²: I added US because of the joke, that Americans are bad at geography <br>
+                    ²: I added "US" because of the joke, that US citizens are bad at geography <br>
                 </form>
                 <script src="js/survey.js"></script>
             </div>
@@ -58,4 +67,5 @@
     <div id="footer"></div>
     <script src="js/template.js"></script>
 </body>
+
 </html>
