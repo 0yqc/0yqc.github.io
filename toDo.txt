@@ -1,9 +1,9 @@
 Hover over Navigator -> List of Subsites
 
-Offset Zoom
+Offset Zoom (?)
 
 /favicon.ico -> Icon Creation
 
-Better Contact (Contact Form?)
-
 Fix Main Page h1 displaying over the edge on small widths
+
+Survey/Statistics
