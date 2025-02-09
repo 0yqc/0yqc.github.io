@@ -12,7 +12,7 @@ document.getElementById("survey").addEventListener("submit", function(event) {
     const color = document.getElementById("color").value
     const message = document.getElementById("message").value
 
-    window.location.href = "mailto:0yqc@duck.com?subject=Website Survey by " + fname + " " + lname + " (" + age + "yo)&body=Birthday: " + birth + "%0D%0AGender: " + gender + " (" + gender_other + ")%0D%0ALocation: " + continent + ", " + country + ", " + city + "%0D%0AFavorite Color: " + color + "%0D%0AMy Random Message:%0D%0A%0D%0A" + message
+    window.location.href = "mailto:0yqc@duck.com?subject=Website Survey by " + fname + " " + lname + " (" + age + "yo)&body=First Name: " + fname + "%0D%0ALast Name: " + lname + "%0D%0AAge: " + age +  "%0D%0ABirthday: " + birth + "%0D%0AGender: " + gender + " (" + gender_other + ")%0D%0ALocation: " + continent + ", " + country + ", " + city + "%0D%0AFavorite Color: " + color + "%0D%0AMy Random Message:%0D%0A%0D%0A" + message + "%0D%0A%0D%0Acsv string:%0D%0A" + fname + "," + lname + "," + age + "," + birth + "," + gender + "," + gender_other + "," + continent + "," + country + "," + city + "," + color + "," + message
 })
 document.getElementById("gender").addEventListener("change", function() {
     const gender_other = document.getElementById("gender_other")

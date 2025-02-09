@@ -124,7 +124,7 @@ h1 {
     box-shadow: 0px 0px 128px #b00080;
     padding: 16px;
     font-family: monospace;
-    font-size: 500%;
+    font-size: 64px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 16px;
@@ -134,21 +134,21 @@ h1 {
 }
 
 h2 {
-    font-size: 300%;
+    font-size: 48px;
     background-color: #d00040;
     box-shadow: 0px 0px 32px #d00040;
     margin-left: 16px;
 }
 
 h3 {
-    font-size: 250%;
+    font-size: 32px;
     background-color: #800030;
     box-shadow: 0px 0px 32px #800030;
     margin-left: 32px;
 }
 
 h4 {
-    font-size: 200%;
+    font-size: 24px;
     background-color: #400020;
     box-shadow: 0px 0px 32px #400020;
     margin-left: 64px;
