@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#00000080, #00000080), url(https://picsum.photos/2048);
+    background-image: linear-gradient(#000000B0, #000000B0), url(https://picsum.photos/2048);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ header, footer {
 }
 
 header {
-    background-color: #40003080;
+    background-color: #00000080;
     padding: 8px;
     font-family: monospace;
     text-transform: lowercase;
@@ -39,7 +39,7 @@ header {
 }
 
 footer {
-    background-color: #400030B0;
+    background-color: #00000080;
     line-height: 200%;
     padding: 16px;
 }
@@ -111,6 +111,8 @@ h2, h3, h4, h5, h6 {
     letter-spacing: 8px;
     text-shadow: 2px 2px 4px black;
     border-radius: 8px;
+    background-color: #00000080;
+    box-shadow: 0px 0px 64px #808080;
 }
 
 h2::before, h3::before, h4::before, h5::before, h6::before {
@@ -119,8 +121,8 @@ h2::before, h3::before, h4::before, h5::before, h6::before {
 }
 
 h1 {
-    background-color: #b00080;
-    box-shadow: 0px 0px 128px #b00080;
+    background-color: #00000080;
+    box-shadow: 0px 0px 64px #808080;
     padding: 16px;
     font-family: monospace;
     font-size: 64px;
@@ -134,23 +136,14 @@ h1 {
 
 h2 {
     font-size: 48px;
-    background-color: #d00040;
-    box-shadow: 0px 0px 32px #d00040;
-    margin-left: 16px;
 }
 
 h3 {
     font-size: 32px;
-    background-color: #800030;
-    box-shadow: 0px 0px 32px #800030;
-    margin-left: 32px;
 }
 
 h4 {
     font-size: 24px;
-    background-color: #400020;
-    box-shadow: 0px 0px 32px #400020;
-    margin-left: 64px;
 }
 
 a {
