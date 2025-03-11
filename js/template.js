@@ -21,7 +21,7 @@ document.getElementById("header").innerHTML = `
         <tr>
             <td>
                 <a href="">
-                    <img src="media/logo_white.svg" alt="yQc: yQlormatic" style="width:87px;height:38,5px"></a>
+                    <img src="media/logo/white.svg" alt="yQc: yQlormatic" style="width:87px;height:38,5px"></a>
 `
     + text_navigator +
     `
@@ -36,9 +36,25 @@ document.getElementById("header").innerHTML = `
 
 document.getElementById("footer").innerHTML = `
 <footer>
-    <a href="credits">Credits</a><br>
-    <a href="contact">Contact</a><br>
-    <a href="sitemap">Sitemap</a><br>
-    <a href="statistics">Statistics</a>
+    <table>
+        <tr>
+            <td style="vertical-align: center">
+                <a href="credits">Credits</a><br><br>
+                <a href="contact">Contact<br>Feedback<br>Bug Report</a>
+            </td>
+            <td style="width: 50%; font-size: 75%;">
+                <form id="newsletter">
+                    <label>E-Mail Newsletter Signup</label><br>
+                    <label for="email">Your E-Mail Adress:</label><br>
+                    <input type="email" name="email" id="email" required><br>
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree">I agree to receiving update emails about this website, I can opt out from these emails at any time.</label><br>
+                    <input type="submit" name="submit" id="submit" value="Signup (Opens Mail Program)">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+<script src="js/newsletter.js"></script>
 </footer>
 `
