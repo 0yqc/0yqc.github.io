@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/no_headerNumbering.css">
+    <link rel="stylesheet" href="css/override/no_headingNumbering.css">
     <title>404 Not Found | 0yQc.github.io</title>
 </head>
+
 <body>
     <div id="header"></div>
     <div id="content">
         <h1>Error 404 Not Found</h1>
         <h2>
             <div id="site_url"></div>
-            <script>
-                const path = window.location.pathname
-                document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a> does not exist"
-            </script>
         </h2>
         <p>
             I'm sorry, but the page you were looking for does not exist. Try:
         </p>
         <ul>
-            <li id="html_redirect"></li>
+            <span id="html_redirect"></span>
             <li><a href="">Home Page</a></li>
             <li><a href="sitemap">Sitemap</a></li>
-            <script>
-                if (window.location.pathname.endsWith(".html")) {
-                    const newPath = window.location.pathname.replace(".html", "/")
-                    document.getElementById("html_redirect").innerHTML = "<a href=\"" + newPath + "\">" + newPath + "</a>"
-                }
-            </script>
         </ul>
     </div>
     <div id="footer"></div>
+    <script>
+        const path = window.location.pathname
+        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a> does not exist"
+        
+        if (window.location.pathname.endsWith(".html")) {
+            const newPath = window.location.pathname.replace(".html", "/")
+            document.getElementById("html_redirect").innerHTML = "<li><a href=\"" + newPath + "\">" + newPath + "</a></li>"
+        }
+
+        if (window.location.pathname == window.location.pathname.toLowerCase()) {
+        } else {
+            window.location.href = window.location.pathname.toLowerCase();
+        }
+    </script>
     <script src="js/template.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,65 @@
+<ul>
+	<li>
+		root
+		<ul>
+			<li>
+				templates
+				<ul>
+					<li>
+						main
+						<ul>
+							<li>
+								a
+								<ul>
+									<a href="/">
+										<li>
+											b
+										</li>
+									</a>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						redir
+					</li>
+				</ul>
+			</li>
+			<li>
+				contact
+			</li>
+			<li>
+				credits
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<style>
+	ul,
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	ul ul {
+		display: none;
+		position: absolute;
+		left: 100%;
+		top: 0;
+	}
+
+	li:hover>ul {
+		display: block;
+	}
+
+	li {
+		width: 128px;
+		background-color: #404040;
+		padding: 32px;
+		margin: 4px;
+		margin-top: 0px;
+	}
+</style>

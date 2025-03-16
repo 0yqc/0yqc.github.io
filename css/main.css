@@ -72,7 +72,7 @@ footer table {
 }
 
 body {
-    counter-reset: h2_counter
+    counter-reset: h2_counter;
 }
 
 h2 {
