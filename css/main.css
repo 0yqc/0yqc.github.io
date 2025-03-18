@@ -200,7 +200,7 @@ input[type=radio], input[type=checkbox], input[type=checkbox]:focus {
     height: 16px;
     margin: 8px;
     accent-color: #000000;
-    
+
 }
 
 input[type=color] {
@@ -250,4 +250,55 @@ select {
 
 .hidden {
     display: none;
+}
+
+.multi-level_dropdown {
+    display: inline-block;
+}
+
+.multi-level_dropdown, .multi-level_dropdown ul, .multi-level_dropdown li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.multi-level_dropdown ul li {
+    margin-left: 0;
+}
+
+.multi-level_dropdown ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.multi-level_dropdown ul ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.multi-level_dropdown li:hover > ul, .multi-level_dropdown:focus-within > ul {
+    display: block;
+}
+
+.multi-level_dropdown li {
+    width: 128px;
+    background-color: #404040;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    margin-top: 4px;
+}
+
+.multi-level_dropdown ul ul li {
+    margin-top: 0;
+    margin-left: 4px;
+}
+
+.multi-level_dropdown li:hover {
+    background-color: #808080;
 }

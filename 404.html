@@ -36,8 +36,7 @@
             document.getElementById("html_redirect").innerHTML = "<li><a href=\"" + newPath + "\">" + newPath + "</a></li>"
         }
 
-        if (window.location.pathname == window.location.pathname.toLowerCase()) {
-        } else {
+        if (window.location.pathname != window.location.pathname.toLowerCase()) {
             window.location.href = window.location.pathname.toLowerCase();
         }
     </script>

@@ -15,7 +15,7 @@ for (i = 0; i < path.length; i++) { //Iterate through every path element
     */
 }
 
-function loadFile(path, elementId, callback) {
+function loadHTML(path, elementId, callback) {
     fetch(path)
         .then(response => response.text())
         .then(data => {
@@ -25,9 +25,9 @@ function loadFile(path, elementId, callback) {
         .catch(error => console.error("Error Loading File: " + path + ", Error: " + error));
 }
 
-loadFile("templates/header.html", "header", function() {
-    document.getElementById("navigator").innerHTML = text_navigator;
+loadHTML("templates/header.html", "header", function() {
+    document.getElementById("navigator_text").innerHTML = text_navigator;
     document.getElementById("last_modified").innerHTML = new Date(document.lastModified).toLocaleDateString("en-us", {year: "numeric", month:
         "short", day: "numeric"});
 });
-loadFile("templates/footer.html", "footer");
+loadHTML("templates/footer.html", "footer");
