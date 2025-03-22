@@ -9,5 +9,5 @@ navigator.getBattery().then(function(battery) {
 	document.getElementById("bat_percentage").innerHTML = (battery.level * 100) + "%"
 	document.getElementById("bat_charging").innerHTML = battery.charging
 	document.getElementById("bat_timeEmpty").innerHTML = (battery.dischargingTime / 60) + " minutes"
-	document.getElementById("bat_timeFull").innerHTML = (battery.chargingTimer / 60) + "minutes"
+	document.getElementById("bat_timeFull").innerHTML = (battery.chargingTime / 60) + "minutes"
 })
