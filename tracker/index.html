@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Tracking Showcase | 0yqc.github.io</title>
+</head>
+
+<body>
+	<div id="header"></div>
+	<div id="content">
+		<h1>Tracking Showcase</h1>
+		<p>This data does not leave your device.</p>
+		<p>This showcase is here to show you, how much websites actually know about you, because it is quite much. <br> Note: Some fields may be empty becuase of higher security settings.</p>
+		<p>
+			<h2>General</h2>
+		<table>
+			<tr></tr>
+			<tr>
+				<td>Browser:</td>
+				<td><span id="browser"></span></td>
+			</tr>
+			<tr>
+				<td>Browser Version:</td>
+				<td><span id="browser_version"></span></td>
+			</tr>
+			<tr>
+				<td>Browser Language:</td>
+				<td><span id="browser_lang"></span></td>
+			</tr>
+			<tr>
+				<td>Operating System:</td>
+				<td><span id="os"></span></td>
+			</tr>
+			<tr>
+				<td>Your Previous Site (Referrer):</td>
+				<td><span id="referrer"></span></td>
+			</tr>
+			<tr>
+				<td>Your Timezone:</td>
+				<td><span id="timezone"></span></td>
+			</tr>
+		</table>
+		<h2>Battery Stats</h2>
+		<p>Note: Most browsers don't send any data.</p>
+		<table>
+			<tr>
+				<td>Current Percentage:</td>
+				<td><span id="bat_percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Is Chanrging?</td>
+				<td><span id="bat_charging"></span></td>
+			</tr>
+			<tr>
+				<td>Time until empty:</td>
+				<td><span id="bat_timeEmpty"></span></td>
+			</tr>
+			<tr>
+				<td>Time until full:</td>
+				<td><span id="bat_timeFull"></span></td>
+			</tr>
+		</table>
+		</p>
+		<script src="js/tracker.js"></script>
+	</div>
+	<div id="footer"></div>
+	<script src="js/template.js"></script>
+</body>
+
+</html>
