@@ -1,9 +1,5 @@
-Hover over Navigator -> List of Subsites
-
 Offset Zoom (?)
-
-/favicon.ico -> Icon Creation
 
 Fix Main Page h1 displaying over the edge on small widths
 
-Survey/Statistics E-Mail send
+FIX newsletter signup broken

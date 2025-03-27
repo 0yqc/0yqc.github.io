@@ -25,9 +25,12 @@ function loadHTML(path, elementId, callback) {
         .catch(error => console.error("Error Loading File: " + path + ", Error: " + error));
 }
 
-loadHTML("templates/header.html", "header", function() {
+loadHTML("templates/header.html", "header", function () {
     document.getElementById("navigator_text").innerHTML = text_navigator;
-    document.getElementById("last_modified").innerHTML = new Date(document.lastModified).toLocaleDateString("en-us", {year: "numeric", month:
-        "short", day: "numeric"});
+    document.getElementById("last_modified").innerHTML = new Date(document.lastModified).toLocaleDateString("en-us", {
+        year: "numeric", month:
+            "short", day: "numeric"
+    });
 });
-loadHTML("templates/footer.html", "footer");
+
+loadHTML("templates/footer.html", "footer")
