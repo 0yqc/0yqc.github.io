@@ -1,8 +1,11 @@
+/* VARIABLES */
+
 :root {
 	/*Transparencies:*/
 	--trans_25: #000000af;
 	--trans_50: #0000007f;
 	--trans_75: #0000003f;
+	--trans_100: #00000000;
 
 	/*Lightness Shades:*/
 	--light_00: #000000;
@@ -14,7 +17,11 @@
 	/*Other:*/
 	--header_height: 128px;
 	/*Set height as a variable so it can be used multiple times*/
+	--blur: 64px;
+	/*Standard value for blurred objects*/
 }
+
+/* BODY */
 
 body {
 	/*linear-gradient to darken the image, random image by picsum.photos*/
@@ -38,13 +45,7 @@ body {
 	/*Text Shadow: Offset Right, Offset Down, Blur, Color*/
 }
 
-a {
-	color: var(--light_100);
-}
-
-a:hover {
-	color: var(--light_75);
-}
+/* HEADER / FOOTER */
 
 header, footer, h1, h2, h3, h4, h5, h6 {
 	font-family: monospace;
@@ -73,6 +74,7 @@ header {
 	--width: 75vw;
 	/*Set width becuase it is needed multiple times*/
 	background-color: var(--trans_50);
+	backdrop-filter: blur(var(--blur));
 	padding: 8px;
 	width: var(--width);
 	position: absolute;
@@ -90,7 +92,8 @@ header {
 }
 
 footer {
-	background-color: var(--trans_25);
+	background-color: var(--trans_50);
+	backdrop-filter: blur(var(--blur));
 	line-height: 200%;
 	/*Larger Line height to appear more filled*/
 	margin: 16px;
@@ -103,6 +106,8 @@ header table, footer table {
 	/*Full width, used to display multiple columns*/
 }
 
+/* CONTENT */
+
 #content {
 	/*The main container for all the content*/
 	--margin: 32px;
@@ -111,6 +116,190 @@ header table, footer table {
 	/*To display below the header and have the standard margin*/
 }
 
+a {
+	color: var(--light_100);
+}
+
+a:hover {
+	color: var(--light_75);
+}
+
+
+/* HEADINGS */
+
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+	/*Used to underline the headings*/
+	--width: 33.3%;
+	/*Set width of underline*/
+	content: "";
+	/*Needed to render it*/
+	display: block;
+	/*Needed to change dimensions*/
+	position: relative;
+	/*Needed to change position relative to the heading*/
+	left: calc(1/2*(100% - var(--width)));
+	/*
+	Calculate distance from left origin point
+
+	1/2:			half on the left, half on the right (implied)
+	100%:			Full width
+	- var(--width):	Without the width of the line
+	*/
+	width: var(--width);
+	height: 4px;
+	background-color: var(--light_100);
+	border-radius: 2px;
+	/*Rounded edges*/
+}
+
+/* INPUT */
+
+input, button, textarea, select {
+	color: var(--light_100);
+	accent-color: var(--light_00);
+	/*Checkboxes, radio buttons, etc.*/
+	background-color: var(--trans_75);
+	backdrop-filter: blur(var(--blur));
+}
+
+input[type=text], input[type=email], input[type=number], input[type=button], input[type=submit], textarea {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	/*Requred that the width is uniform*/
+	outline: none;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+}
+
+/* USEFULL CLASSES */
+
+.center {
+	width: 100%;
+	/*Cover everything*/
+	display: flex;
+	/*Required to center*/
+	justify-content: center;
+}
+
+.hidden {
+	/*Used to interact through JS*/
+	display: none;
+}
+
+/* FLEX WRAPPING */
+
+.flex_container {
+	display: flex;
+	/*change display mode*/
+	flex-wrap: wrap;
+	/*set wrapping to wrap into multiple rows*/
+	justify-content: center;
+	/*center content*/
+}
+
+.flex_item {
+	flex-basis: 25%;
+	/*Set base width*/
+	flex-grow: 1;
+	/*Allow expanding to fill full width*/
+	flex-shrink: 1;
+	/*Allow shrinking to fill full width*/
+}
+
+/* MULTI-LEVEL DROPDOWN */
+
+.multi-level_dropdown {
+	display: inline-block;
+	/*Display inline with advanced styling possibilities*/
+}
+
+.multi-level_dropdown, .multi-level_dropdown ul, .multi-level_dropdown li {
+	list-style-type: none;
+	/*Remove bullets*/
+	margin: 0;
+	padding: 0;
+	position: relative;
+	/*Displays children relative to this element*/
+}
+
+.multi-level_dropdown ul li {
+	margin-left: 0;
+	/*Align properly without any space*/
+}
+
+.multi-level_dropdown ul {
+	/*First dropdown*/
+	display: none;
+	/*Hide unless selected*/
+	position: absolute;
+	/*Display relative to parent*/
+	left: 0;
+	top: 100%;
+	/*Display directly below*/
+}
+
+.multi-level_dropdown ul ul {
+	/*Subsequent dropdowns*/
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	/*Display to the right instead*/
+}
+
+.multi-level_dropdown li:hover>ul {
+	/*Display only the next ul when the li is hovered*/
+	display: block;
+}
+
+.multi-level_dropdown li {
+	width: 128px;
+	background-color: var(--light_25);
+	border-radius: 4px;
+	padding: 8px;
+	margin: 4px;
+}
+
+.multi-level_dropdown ul ul li {
+	margin-top: 0;
+	/*No offset*/
+	margin-left: 4px;
+}
+
+.multi-level_dropdown li:hover {
+	background-color: var(--light_50);
+}
+
+.multi-level_dropdown a {
+	/*Cover the whole li element*/
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.multi-level_dropdown a:hover {
+	/*Do not change color*/
+	color: inherit;
+}
+
+.multi-level_dropdown li.submenu::after {
+	/*Display to all li elements with the class submenu*/
+	content: ">"; /*Display an arrow to indicate a submenu*/
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	/*Display in middle*/
+}
+
+/* TMP */
+
+.rb-moc-embed {
+	background-color: transparent;
 }
