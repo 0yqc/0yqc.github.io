@@ -45,6 +45,11 @@ body {
 	/*Text Shadow: Offset Right, Offset Down, Blur, Color*/
 }
 
+img {
+	vertical-align: middle;
+	/*Required for some things*/
+}
+
 /* HEADER / FOOTER */
 
 header, footer, h1, h2, h3, h4, h5, h6 {
@@ -206,10 +211,6 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 .flex_item {
 	flex-basis: 25%;
 	/*Set base width*/
-	flex-grow: 1;
-	/*Allow expanding to fill full width*/
-	flex-shrink: 1;
-	/*Allow shrinking to fill full width*/
 }
 
 /* MULTI-LEVEL DROPDOWN */
@@ -276,13 +277,6 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	background-color: var(--light_50);
 }
 
-.multi-level_dropdown a {
-	/*Cover the whole li element*/
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
 .multi-level_dropdown a:hover {
 	/*Do not change color*/
 	color: inherit;
@@ -296,10 +290,4 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	top: 50%;
 	transform: translateY(-50%);
 	/*Display in middle*/
-}
-
-/* TMP */
-
-.rb-moc-embed {
-	background-color: transparent;
 }

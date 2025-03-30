@@ -33,4 +33,10 @@ loadHTML("templates/header.html", "header", function () {
     });
 });
 
-loadHTML("templates/footer.html", "footer")
+loadHTML("templates/footer.html", "footer", function () {
+    document.getElementById("newsletter").addEventListener("submit", function (event) {
+        event.preventDefault
+        const email = document.getElementById("email").value;
+        window.location.href = "mailto:0yqc@duck.com?subject=Newsletter Signup for " + email + "&body=" + email
+    })
+});

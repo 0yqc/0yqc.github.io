@@ -1,5 +1,1 @@
-Offset Zoom (?)
-
-Fix Main Page h1 displaying over the edge on small widths
-
-FIX newsletter signup broken
+Navigation Dropdown Touch/Keyboard Support
