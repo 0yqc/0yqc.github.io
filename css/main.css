@@ -254,7 +254,7 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	/*Display to the right instead*/
 }
 
-.multi-level_dropdown li:hover>ul {
+.multi-level_dropdown li:hover>ul, .multi-level_dropdown li:focus-within>ul {
 	/*Display only the next ul when the li is hovered*/
 	display: block;
 }
@@ -284,7 +284,8 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 
 .multi-level_dropdown li.submenu::after {
 	/*Display to all li elements with the class submenu*/
-	content: ">"; /*Display an arrow to indicate a submenu*/
+	content: ">";
+	/*Display an arrow to indicate a submenu*/
 	position: absolute;
 	right: 8px;
 	top: 50%;
