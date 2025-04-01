@@ -1,1 +1,3 @@
-Navigation Dropdown Touch/Keyboard Support
+Navigation Dropdown Arrow Keys Support
+
+/lego/ only show one row of recent MOCs

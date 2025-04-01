@@ -23,6 +23,11 @@
 
 /* BODY */
 
+* {
+	box-sizing: border-box;
+	/*include border and padding in size*/
+}
+
 body {
 	/*linear-gradient to darken the image, random image by picsum.photos*/
 	background-image: linear-gradient(var(--trans_50), var(--trans_50)), url(https://picsum.photos/2048);
@@ -73,6 +78,11 @@ header, footer, h1, h2, h3, h4, h5, h6 {
 	/*100% of the width (ViewportWidth)*/
 	background: linear-gradient(var(--trans_00), var(--trans_100));
 	/*Linear gradient to create fade-out effect*/
+}
+
+#header img {
+	height: 4em;
+	/*4× text size*/
 }
 
 header {
@@ -136,9 +146,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+/* HEADINGS UNDERLINE */
+
 h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
-	/*Used to underline the headings*/
-	--width: 33.3%;
 	/*Set width of underline*/
 	content: "";
 	/*Needed to render it*/
@@ -159,6 +169,32 @@ h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
 	background-color: var(--light_100);
 	border-radius: 2px;
 	/*Rounded edges*/
+}
+
+/*set different values for each heading*/
+
+h1 {
+	--width: 100%;
+}
+
+h2 {
+	--width: calc(100% / 2);
+}
+
+h3 {
+	--width: calc(100% / 3);
+}
+
+h4 {
+	--width: calc(100% / 4);
+}
+
+h5  {
+	--width: calc(100% / 5);
+}
+
+h6 {
+	--width: calc(100% / 6)
 }
 
 /* INPUT */
@@ -202,15 +238,14 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 .flex_container {
 	display: flex;
 	/*change display mode*/
+	flex-basis: 25%;
+	/*set base width if not overriden*/
 	flex-wrap: wrap;
 	/*set wrapping to wrap into multiple rows*/
 	justify-content: center;
 	/*center content*/
-}
-
-.flex_item {
-	flex-basis: 25%;
-	/*Set base width*/
+	gap: 16px;
+	/*slight gap between items*/
 }
 
 /* MULTI-LEVEL DROPDOWN */
@@ -227,6 +262,8 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	padding: 0;
 	position: relative;
 	/*Displays children relative to this element*/
+	z-index: 2;
+	/*Display above everything else*/
 }
 
 .multi-level_dropdown ul li {
@@ -273,7 +310,7 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	margin-left: 4px;
 }
 
-.multi-level_dropdown li:hover {
+.multi-level_dropdown li:hover, .multi-level_dropdown li:focus-within {
 	background-color: var(--light_50);
 }
 
@@ -282,7 +319,7 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	color: inherit;
 }
 
-.multi-level_dropdown li.submenu::after {
+.multi-level_dropdown li:has(ul)::after {
 	/*Display to all li elements with the class submenu*/
 	content: ">";
 	/*Display an arrow to indicate a submenu*/

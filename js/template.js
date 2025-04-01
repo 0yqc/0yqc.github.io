@@ -3,16 +3,20 @@ const path = window.location.pathname.split("/").filter(part => part); //Split i
 var link = ""; //set link starting point to / to add further elements
 for (i = 0; i < path.length; i++) { //Iterate through every path element
     link = link + "/" + path[i]; //set the current link, with the link before, and the new path element
-    text_navigator = text_navigator + " > <a href=" + link + ">" + path[i] + "</a>";
+    text_navigator = text_navigator + "<a href=" + link + ">" + path[i] + "</a>";
     /*
     *   text_navigator = text_navigator +: Add to the text
-    *   " >: Add > as an arrow symbol
     *   <a href=": Start Link
     *   + link: use link as the href
     *   + ">": End <a> tag
     *   + path[i]: Add the current path element
     *   + "</a>": Close the <a> tag
     */
+    if (i < path.length-1) {
+        // i is 0 for first element, path.length is 1 for 1 element
+        text_navigator = text_navigator + " > "
+        // Add > as arrow symbol after the link, except it is the last element
+    }
 }
 
 function loadHTML(path, elementId, callback) {
