@@ -17,7 +17,7 @@ Visit [https://0yqc.github.io/credits/](https://0yqc.github.io/credits/)
 
 ## License
 
-This work is licensed under the Creative Commons Attribution Share-Alike license.
+This work is licensed under the GNU General Public License.
 
 You are free to use this as it is or modified, but please:
 - Make Contributions
