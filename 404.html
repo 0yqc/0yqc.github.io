@@ -21,7 +21,6 @@
             I'm sorry, but the page you were looking for does not exist. Try:
         </p>
         <ul>
-            <span id="html_redirect"></span>
             <li><a href="">Home Page</a></li>
             <li><a href="sitemap">Sitemap</a></li>
         </ul>
@@ -32,8 +31,7 @@
         document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a> does not exist"
         
         if (window.location.pathname.endsWith(".html")) {
-            const newPath = window.location.pathname.replace(".html", "/")
-            document.getElementById("html_redirect").innerHTML = "<li><a href=\"" + newPath + "\">" + newPath + "</a></li>"
+            window.location.pathname = window.location.pathname.replace(".html", "/")
         }
 
         if (window.location.pathname != window.location.pathname.toLowerCase()) {

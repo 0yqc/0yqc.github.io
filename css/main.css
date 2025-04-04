@@ -26,11 +26,14 @@
 * {
 	box-sizing: border-box;
 	/*include border and padding in size*/
+	min-width: 0;
+	/*stop browsers applying custom min-width rules*/
 }
 
 body {
-	/*linear-gradient to darken the image, random image by picsum.photos*/
-	background-image: linear-gradient(var(--trans_50), var(--trans_50)), url(https://picsum.photos/2048);
+	background-image: url(/media/background/main.jpg);
+	/*Background Imgae by Lum3n on Pexels, edited by me
+	https://www.pexels.com/photo/green-pine-trees-covered-with-fogs-under-white-sky-during-daytime-167699/*/
 	background-color: var(--light_00);
 	/*Black background if image loading fails*/
 	background-repeat: no-repeat;
@@ -189,7 +192,7 @@ h4 {
 	--width: calc(100% / 4);
 }
 
-h5  {
+h5 {
 	--width: calc(100% / 5);
 }
 
@@ -238,14 +241,16 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 .flex_container {
 	display: flex;
 	/*change display mode*/
-	flex-basis: 25%;
-	/*set base width if not overriden*/
 	flex-wrap: wrap;
 	/*set wrapping to wrap into multiple rows*/
 	justify-content: center;
 	/*center content*/
+	flex-basis: 25%;
+	/*set base width if not overriden*/
 	gap: 16px;
 	/*slight gap between items*/
+	overflow: hidden;
+	/*hide any scrolling bars*/
 }
 
 /* MULTI-LEVEL DROPDOWN */
