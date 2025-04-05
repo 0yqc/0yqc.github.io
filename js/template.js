@@ -19,6 +19,7 @@ for (i = 0; i < path.length; i++) { //Iterate through every path element
     }
 }
 
+// Declare function
 function loadHTML(path, elementId, callback) {
     fetch(path)
         .then(response => response.text())
@@ -30,7 +31,7 @@ function loadHTML(path, elementId, callback) {
 }
 
 loadHTML("templates/header.html", "header", function () {
-    document.getElementById("navigator_text").innerHTML = text_navigator;
+    document.getElementById("breadcrumb").innerHTML = text_navigator;
     document.getElementById("last_modified").innerHTML = new Date(document.lastModified).toLocaleDateString("en-us", {
         year: "numeric", month:
             "short", day: "numeric"

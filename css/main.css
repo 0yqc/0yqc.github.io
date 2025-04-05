@@ -124,6 +124,11 @@ header table, footer table {
 	/*Full width, used to display multiple columns*/
 }
 
+footer table tr td {
+	width: 50%;
+	/*both columns have equal width*/
+}
+
 /* CONTENT */
 
 #content {
@@ -177,7 +182,7 @@ h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
 /*set different values for each heading*/
 
 h1 {
-	--width: 100%;
+	--width: 75%;
 }
 
 h2 {
@@ -221,14 +226,51 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	border-radius: 8px;
 }
 
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 800px) {
+	#breadcrumb {
+		/*hide breadcrumb navigation*/
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#header_tdRight {
+		/*hide right part of header (last modified)*/
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#header_logo {
+		/*hide logo on small width, to prefer the navigation dropdown*/
+		display: none;
+	}
+}
+
 /* USEFULL CLASSES */
 
 .center {
+	/*Center Items*/
 	width: 100%;
 	/*Cover everything*/
 	display: flex;
 	/*Required to center*/
 	justify-content: center;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_verticalMiddle {
+	vertical-align: middle;
+}
+
+.fullWidth {
+	/*full width*/
+	width: 100%;
 }
 
 .hidden {
