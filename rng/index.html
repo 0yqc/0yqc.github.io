@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>RNG | 0yqc.github.io</title>
+</head>
+
+<body>
+	<div id="header"></div>
+	<div id="content">
+		<h1>Random Number Generator (RNG)</h1>
+		<div id="description">
+			This is a Random Number Generator (RNG), which is designed to be manipulated by you. <br>
+			This works by adding a <code>?seed=X</code> as a URL parameter. Letters are ignored and all digits form the "random" number.
+		</div>
+		<div id="rng" class="text_5em center">
+		</div>
+		<script>
+			const url_params = new URLSearchParams(document.location.search);
+			const seed = url_params.get("seed")
+			if (seed == null) {
+				document.getElementById("rng").classList.add("hidden")
+			} else {
+				document.getElementById("description").classList.add("hidden")
+				const digits = seed.match(/\d/g) // ReGeX to only match digits (/.../ is for ReGeX, g makes it globally, so not just first occurence) 
+				document.getElementById("rng").innerHTML = digits.join("") // Just join each element
+			}
+		</script>
+	</div>
+	<div id="footer"></div>
+	<script src="js/template.js"></script>
+</body>
+
+</html>

@@ -13,11 +13,12 @@
 	<div id="header"></div>
 	<div id="content">
 		<h1>Tracking Showcase</h1>
-		<p>This data does not leave your device.</p>
-		<p>This showcase is here to show you, how much websites actually know about you, because it is quite much. <br> Note: Some fields may be empty becuase of higher security settings.</p>
+		<p class="text_2em">This data does not leave your device.</p>
+		<p>This showcase is here to show you, how much websites actually know about you, because it is quite much. <br>
+			Note: Some fields may be empty becuase of higher security settings.</p>
 		<p>
-			<h2>General</h2>
-		<table>
+		<h2>General</h2>
+		<table class="center">
 			<tr></tr>
 			<tr>
 				<td>Browser:</td>
@@ -36,17 +37,25 @@
 				<td><span id="os"></span></td>
 			</tr>
 			<tr>
-				<td>Your Previous Site (Referrer):</td>
+				<td>CPU cores:</td>
+				<td><span id="cpu"></span></td>
+			</tr>
+			<tr>
+				<td>Previous Site (Referrer):</td>
 				<td><span id="referrer"></span></td>
 			</tr>
 			<tr>
-				<td>Your Timezone:</td>
+				<td>Timezone:</td>
 				<td><span id="timezone"></span></td>
+			</tr>
+			<tr>
+				<td>Connection Type:</td>
+				<td><span id="connection"></span></td>
 			</tr>
 		</table>
 		<h2>Battery Stats</h2>
-		<p>Note: Most browsers don't send any data.</p>
-		<table>
+		<p>Note: Some browsers don't send any data.</p>
+		<table class="center">
 			<tr>
 				<td>Current Percentage:</td>
 				<td><span id="bat_percentage"></span></td>

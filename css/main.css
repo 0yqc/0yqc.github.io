@@ -30,9 +30,9 @@
 	/*stop browsers applying custom min-width rules*/
 }
 
-body {
+html, body {
 	background-image: url(/media/background/main.jpg);
-	/*Background Imgae by Lum3n on Pexels, edited by me
+	/*Background Image by Lum3n on Pexels, edited by me
 	https://www.pexels.com/photo/green-pine-trees-covered-with-fogs-under-white-sky-during-daytime-167699/*/
 	background-color: var(--light_00);
 	/*Black background if image loading fails*/
@@ -43,14 +43,27 @@ body {
 	background-attachment: fixed;
 	/*Fix background regardless of scrolling*/
 
-	font-family: sans-serif;
-	/*Sans font*/
+	font-family: system-ui, sans-serif;
+	/*System font, otherwise Sans font*/
 	color: var(--light_100);
 	/*White text*/
 	text-align: justify;
 	/*Justified text*/
 	text-shadow: 4px 4px 8px var(--light_00);
 	/*Text Shadow: Offset Right, Offset Down, Blur, Color*/
+
+	/*keep footer at bottom*/
+	display: flex;
+	/*display flex*/
+	flex-direction: column;
+	/*make it grow vertically*/
+	height: 100%;
+	/*100% height*/
+}
+
+#content {
+	flex-grow: 1;
+	/*let the content grow, to keep the footer at the bottom*/
 }
 
 img {
@@ -78,7 +91,7 @@ header, footer, h1, h2, h3, h4, h5, h6 {
 	/*Offset from left edge*/
 	height: var(--header_height);
 	width: 100vw;
-	/*100% of the width (ViewportWidth)*/
+	/*100% of the width (Viewport Width)*/
 	background: linear-gradient(var(--trans_00), var(--trans_100));
 	/*Linear gradient to create fade-out effect*/
 }
@@ -90,7 +103,7 @@ header, footer, h1, h2, h3, h4, h5, h6 {
 
 header {
 	--width: 75vw;
-	/*Set width becuase it is needed multiple times*/
+	/*Set width because it is needed multiple times*/
 	background-color: var(--trans_50);
 	backdrop-filter: blur(var(--blur));
 	padding: 8px;
@@ -100,8 +113,8 @@ header {
 	top: 16px;
 	/*Spacing to top of screen*/
 	left: calc(1/2*(100vw - var(--width)));
-	/*Calculate how much sapce on the left is needed
-	calc():				 Calcualte
+	/*Calculate how much space on the left is needed
+	calc():				 Calculate
 	1/2*():				 Half on this site, half on the right side
 	(100vw:				 full viewport width
 	- var(--width)):	 minus the width of the header
@@ -219,7 +232,7 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	width: 100%;
 	padding: 8px;
 	box-sizing: border-box;
-	/*Requred that the width is uniform*/
+	/*Required that the width is uniform*/
 	outline: none;
 	border-style: solid;
 	border-width: 2px;
@@ -228,28 +241,28 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	#breadcrumb {
 		/*hide breadcrumb navigation*/
 		display: none;
 	}
 }
 
-@media only screen and (max-width: 650px) {
-	#header_tdRight {
+@media only screen and (max-width: 850px) {
+	#header_tdLastModified {
 		/*hide right part of header (last modified)*/
 		display: none;
 	}
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 550px) {
 	#header_logo {
 		/*hide logo on small width, to prefer the navigation dropdown*/
 		display: none;
 	}
 }
 
-/* USEFULL CLASSES */
+/* USEFUL CLASSES */
 
 .center {
 	/*Center Items*/
@@ -258,6 +271,12 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	display: flex;
 	/*Required to center*/
 	justify-content: center;
+}
+
+.no_underline, .no_underline a {
+	/*most often used for secret a links*/
+	text-decoration: none;
+	/*no underline*/
 }
 
 .text_right {
@@ -278,6 +297,16 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	display: none;
 }
 
+/* TEXT SIZES */
+
+.text_2em {
+	font-size: 2em
+}
+
+.text_5em {
+	font-size: 5em;
+}
+
 /* FLEX WRAPPING */
 
 .flex_container {
@@ -288,7 +317,7 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	justify-content: center;
 	/*center content*/
 	flex-basis: 25%;
-	/*set base width if not overriden*/
+	/*set base width if not overridden*/
 	gap: 16px;
 	/*slight gap between items*/
 	overflow: hidden;
@@ -296,6 +325,49 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 }
 
 /* MULTI-LEVEL DROPDOWN */
+
+/*
+Layout:
+<ul class="multi-level_dropdown">
+	<li>
+		root
+		<ul>
+			[CONTENT]
+		</ul>
+	</li>
+</ul>
+*/
+
+/*function*/
+
+.multi-level_dropdown li ul {
+	display: none;
+	/*initially hide all further elements except root*/
+}
+
+.multi-level_dropdown li:hover>ul,
+.multi-level_dropdown li:focus-within>ul {
+	display: inline-block;
+	/*show them again if they are hovered or if the focus is within (keyboard support)*/
+}
+
+/*aesthetic*/
+
+.multi-level_dropdown li {
+	width: 64px;
+	/*uniform width*/
+	list-style: none;
+	/*no list markers*/
+	background-color: var(--light_75);
+	/*gray bg*/
+}
+
+.multi-level_dropdown ul {
+	background-color: var(--trans_100);
+}
+
+
+/*old code*/
 
 .multi-level_dropdown {
 	display: inline-block;
@@ -344,7 +416,7 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 }
 
 .multi-level_dropdown li {
-	width: 128px;
+	width: 256px;
 	background-color: var(--light_25);
 	border-radius: 4px;
 	padding: 8px;
@@ -367,12 +439,17 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 }
 
 .multi-level_dropdown li:has(ul)::after {
-	/*Display to all li elements with the class submenu*/
-	content: ">";
+	/*Display to all li elements with a ul inside them*/
+	content: "▼";
 	/*Display an arrow to indicate a submenu*/
 	position: absolute;
 	right: 8px;
 	top: 50%;
 	transform: translateY(-50%);
 	/*Display in middle*/
+}
+
+.multi-level_dropdown li ul li:has(ul)::after {
+	/*change everything except the fisrt to show to the right*/
+	content: "►";
 }

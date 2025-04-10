@@ -1,2 +1,14 @@
 Better Homepage
 - Main topics
+
+Manual Sitemap
+- One huge list using <ul>
+- Query it from everywhere it is required
+	- Navigation Dropdown
+	- Search
+	- Sitemap
+
+Tracker Send Analytics Button (email)
+
+Imporive Contact
+- Add optional file upload
