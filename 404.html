@@ -15,21 +15,32 @@
     <div id="content">
         <h1>Error 404 Not Found</h1>
         <h2>
-            <div id="site_url"></div>
+            <span id="site_url"></span> does not exist
         </h2>
         <p>
             I'm sorry, but the page you were looking for does not exist. Try:
         </p>
         <ul>
             <li><a href="">Home Page</a></li>
-            <li><a href="sitemap">Sitemap</a></li>
+            <li><a href="sitemap/">Sitemap</a></li>
         </ul>
+        <h3>Report Broken Link</h3>
+        <div class="center">
+            <form id="broken_link">
+                <label for="referrer">(Optional) Where did you see this link?</label><br>
+                <input type="text" name="referrer" id="referrer">
+                <label for="notes">(Optional) Any additional notes for me?</label><br>
+                <textarea name="notes" id="notes" rows="5"></textarea>
+                <p>Thank You!</p>
+                <input type="submit" name="submit" id="submit" value="Submit Broken Link (Opens Mail Program)">
+            </form>
+        </div>
     </div>
     <div id="footer"></div>
     <script>
         const path = window.location.pathname
-        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a> does not exist"
-        
+        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a>"
+
         if (window.location.pathname.endsWith(".html")) {
             window.location.pathname = window.location.pathname.replace(".html", "/")
         }
@@ -38,6 +49,7 @@
             window.location.href = window.location.pathname.toLowerCase();
         }
     </script>
+    <script src="js/broken_link.js"></script>
     <script src="js/template.js"></script>
 </body>
 

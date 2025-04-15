@@ -5,10 +5,13 @@ Manual Sitemap
 - One huge list using <ul>
 - Query it from everywhere it is required
 	- Navigation Dropdown
-	- Search
+	- Search (also 404)
 	- Sitemap
 
 Tracker Send Analytics Button (email)
 
 Imporive Contact
 - Add optional file upload
+
+404
+- Search Bar

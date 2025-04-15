@@ -237,6 +237,8 @@ input[type=text], input[type=email], input[type=number], input[type=button], inp
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 8px;
+	resize: vertical;
+	/*textarea: only vertical resizing*/
 }
 
 /* RESPONSIVE DESIGN */
@@ -452,4 +454,11 @@ Layout:
 .multi-level_dropdown li ul li:has(ul)::after {
 	/*change everything except the fisrt to show to the right*/
 	content: "►";
+}
+
+/* HEADER / FOOTER: CONTENT */
+
+#tm_lego, #tm_rb {
+	/*initally hide all legal stuff in the footer, it will be shown again on relevant pages*/
+	display: none;
 }
