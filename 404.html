@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/override/no_headingNumbering.css">
+    <link rel="stylesheet" href="css/single/search.css">
     <title>404 Not Found | 0yQc.github.io</title>
 </head>
 
@@ -17,18 +17,26 @@
         <h2>
             <span id="site_url"></span> does not exist
         </h2>
+        <h3>Search</h3>
+        <form id="search_form">
+            <input type="search" name="search" id="search" autofocus>
+            <div id="result" class="lined_ul"></div>
+        </form>
+        <div id="result"></div>
+        <script src="js/search.js"></script>  
+        <h3>Helpful Links</h3>
         <p>
             I'm sorry, but the page you were looking for does not exist. Try:
         </p>
-        <ul>
+        <ul>  
             <li><a href="">Home Page</a></li>
             <li><a href="sitemap/">Sitemap</a></li>
         </ul>
         <h3>Report Broken Link</h3>
         <div class="center">
             <form id="broken_link">
-                <label for="referrer">(Optional) Where did you see this link?</label><br>
-                <input type="text" name="referrer" id="referrer">
+                <label for="seen">(Optional) Where did you see this link?</label><br>
+                <input type="text" name="seen" id="seen">
                 <label for="notes">(Optional) Any additional notes for me?</label><br>
                 <textarea name="notes" id="notes" rows="5"></textarea>
                 <p>Thank You!</p>
@@ -39,12 +47,10 @@
     <div id="footer"></div>
     <script>
         const path = window.location.pathname
-        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a>"
+        // display current url
+        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a>""
 
-        if (window.location.pathname.endsWith(".html")) {
-            window.location.pathname = window.location.pathname.replace(".html", "/")
-        }
-
+        // no case sensitivity by converting to lowercase.
         if (window.location.pathname != window.location.pathname.toLowerCase()) {
             window.location.href = window.location.pathname.toLowerCase();
         }

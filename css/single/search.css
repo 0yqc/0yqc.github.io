@@ -1,0 +1,15 @@
+#result li {
+	background-color: var(--light_25);
+	margin: 16px;
+	/*large gap between elements*/
+	padding: 8px;
+	border-radius: 8px;
+	/*rounded cornors*/
+}
+
+#result li li {
+	margin: 0;
+	/*no gap in nested lis*/
+	padding: 4px;
+	/*smaller padding in nested lists*/
+}

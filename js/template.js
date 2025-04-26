@@ -16,17 +16,17 @@ for (i = 0; i < path_items.length; i++) { //Iterate through every path element
 }
 
 // Declare function
-function loadHTML(path, elementId, callback) {
+function loadHTML(path, callback) {
     fetch(path)
         .then(response => response.text())
         .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-            if (callback) callback();
+            if (callback) callback(data); // in the callback function the HTML is useable via the var data
         })
         .catch(error => console.error("Error Loading File: " + path + ", Error: " + error));
 }
 
-loadHTML("templates/header.html", "header", function () {
+loadHTML("templates/header.html", function (data) {
+    document.getElementById("header").innerHTML = data
     document.getElementById("breadcrumb").innerHTML = text_navigator;
     document.getElementById("last_modified").innerHTML = new Date(document.lastModified).toLocaleDateString("en-us", {
         year: "numeric", month:
@@ -34,10 +34,20 @@ loadHTML("templates/header.html", "header", function () {
     });
 });
 
-loadHTML("templates/footer.html", "footer", function () {
+loadHTML("templates/footer.html", function (data) {
+    document.getElementById("footer").innerHTML = data
     document.getElementById("newsletter").addEventListener("submit", function (event) {
-        event.preventDefault
+        // event listener for the newsletter
+        event.preventDefault();
         const email = document.getElementById("email").value;
         window.location.href = "mailto:0yqc@duck.com?subject=Newsletter Signup for " + email + "&body=" + email
     })
 });
+
+loadHTML("sitemap.html", function (data) {
+    const sitemap = document.getElementsByClassName("sitemap")
+    // set data for each element
+    Array.from(sitemap).forEach(element => {
+        element.innerHTML = data;
+    });
+})
