@@ -1,0 +1,23 @@
+Bug:
+
+I'm very sorry this happened to you. I at 0yqc.github.io are constantly working on improving the site for everyone. This bug has been added for a manual review and will be fixed as soon as possible. Although I understand that you would like the outcome of this bug report, this is not possible. If you have anything to add for this bug report, just reply to any of the emails send. Please do not open a new converation or bug report.
+
+
+Suggestion:
+
+I'm glad you enjoy our website and would like additional features implemented. Your idea is beeing reviewed by our team and, once approved, added to the suggestions on GitHub. If you have anything to add for this feature, please directly reply to any of these emails. Please do not open a new converation or feature request.
+
+
+Other:
+
+I'm glad you contacted me! I appreciate your message and hope you like the service.
+
+
+Privacy:
+
+For any questions realted to privacy concerns, please refer to my private website at https://0yqc.github.io/privacy/. If you still have questions, reply to this email.
+
+
+Open-Source:
+
+Yes. this website is completly open-source. You can view the source code at https://github.com/0yqc/0yqc.github.io/, from which they;ll also get hosted. The code is licensed under the GPL license. View the full license text at https://0yqc.github.io/LICENSE.md.
