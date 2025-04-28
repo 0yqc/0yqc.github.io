@@ -3,6 +3,9 @@ naming conventions
 Better Homepage
 - Main topics
 
-Improve Search
-- No listing of items that contain the search term nested
-- display breadcrumb-style position of links
+Rework Seacrh
+
+directory listings
+- manual index.html files
+
+collapsable sections

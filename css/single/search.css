@@ -1,10 +1,15 @@
 #result li {
-	background-color: var(--light_25);
 	margin: 16px;
 	/*large gap between elements*/
-	padding: 8px;
+	padding: 16px;
 	border-radius: 8px;
 	/*rounded cornors*/
+}
+
+#result>ul>li {
+	/*only apply to top level lis*/
+	background-color: var(--trans_75);
+	backdrop-filter: blur(var(--blur));
 }
 
 #result li li {

@@ -16,12 +16,12 @@ document.getElementById("search_form").addEventListener("submit", function (even
 		const sitemap = document.createElement("div") // a new DOM is created
 		sitemap.innerHTML = data // the string will be inserted, this way it is a DOM
 
-		const items = sitemap.querySelectorAll("li li") // fetch all li elements
+		const items = sitemap.querySelectorAll(".root > li > ul > li") // fetch directly nested li
 
 		const results = Array.from(items).filter(li =>
 			// Array.from converts HTML collection to Array
 			// filter() filters li elements
-			li.textContent.toLowerCase().includes(search)
+			li.innerHTML.toLowerCase().includes(search)
 		)
 
 		const result_div = document.getElementById("result")
@@ -30,8 +30,8 @@ document.getElementById("search_form").addEventListener("submit", function (even
 		const result_list = document.createElement("ul") // create ul to erap everything
 		for (let i = 0; i < results.length; i++) { // loop through every result
 			let result_item = document.createElement("li") // create a tmp var, create a li for the item
-			result_item.appendChild(result_list.appendChild(results[i])) // append the result into it
-			result_list.appendChild(result_item) // appen the li into the ul
+			result_item = results[i].cloneNode(true) // add result
+			result_list.appendChild(result_item) // append the li into the ul
 		}
 		result_div.appendChild(result_list) // insert the results into the div
 	});

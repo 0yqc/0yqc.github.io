@@ -25,6 +25,16 @@ function loadHTML(path, callback) {
         .catch(error => console.error("Error Loading File: " + path + ", Error: " + error));
 }
 
+function insertSitemap() {
+    loadHTML("templates/sitemap.html", function (data) {
+        const sitemap = document.getElementsByClassName("sitemap")
+        // set data for each element
+        Array.from(sitemap).forEach(element => {
+            element.innerHTML = data;
+        });
+    })
+}
+
 loadHTML("templates/header.html", function (data) {
     document.getElementById("header").innerHTML = data
     document.getElementById("breadcrumb").innerHTML = text_navigator;
@@ -32,6 +42,7 @@ loadHTML("templates/header.html", function (data) {
         year: "numeric", month:
             "short", day: "numeric"
     });
+    insertSitemap() // insert the sitemap after the header is fully loaded.
 });
 
 loadHTML("templates/footer.html", function (data) {
@@ -43,11 +54,3 @@ loadHTML("templates/footer.html", function (data) {
         window.location.href = "mailto:0yqc@duck.com?subject=Newsletter Signup for " + email + "&body=" + email
     })
 });
-
-loadHTML("sitemap.html", function (data) {
-    const sitemap = document.getElementsByClassName("sitemap")
-    // set data for each element
-    Array.from(sitemap).forEach(element => {
-        element.innerHTML = data;
-    });
-})

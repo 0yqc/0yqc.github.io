@@ -148,6 +148,8 @@ footer table tr td {
 	/*To display below the header and have the standard margin*/
 }
 
+/* LINKS */
+
 a {
 	color: var(--light_100);
 }
@@ -293,6 +295,10 @@ input[type=search] {
 
 .text_verticalMiddle {
 	vertical-align: middle;
+}
+
+.text_center {
+	text-align: center;
 }
 
 .fullWidth {
@@ -448,7 +454,7 @@ Layout:
 	/*standard uniform width*/
 	max-width: 25vw;
 	/*max 1/4 of viewport (screen) for smaller screens*/
-	padding: 16px;
+	padding: 12px;
 	/*padding (inside element)*/
 }
 

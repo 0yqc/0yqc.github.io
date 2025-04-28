@@ -20,5 +20,5 @@ Visit [https://0yqc.github.io/credits/](https://0yqc.github.io/credits/)
 This work is licensed under the GNU General Public License.
 
 You are free to use this as it is or modified, but please:
-- Make Contributions
+- Make Attributions
 - Also publish it Open-Source

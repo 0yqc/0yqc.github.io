@@ -48,9 +48,9 @@
     <script>
         const path = window.location.pathname
         // display current url
-        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a>""
+        document.getElementById("site_url").innerHTML = "<a href=\"" + window.location.pathname + "\">" + window.location.pathname + "</a>"
 
-        // no case sensitivity by converting to lowercase.
+        // no case sensitivity by converting to lowercase
         if (window.location.pathname != window.location.pathname.toLowerCase()) {
             window.location.href = window.location.pathname.toLowerCase();
         }
