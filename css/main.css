@@ -2,10 +2,10 @@
 
 :root {
 	/*Transparencies:*/
-	--trans_25: #3f3f3faf;
-	--trans_50: #3f3f3f7f;
-	--trans_75: #3f3f3f3f;
-	--trans_100: #3f3f3f00;
+	--trans_25: #5f3f3faf;
+	--trans_50: #5f3f3f7f;
+	--trans_75: #5f3f3f3f;
+	--trans_100: #5f3f3f00;
 
 	/*Lightness Shades:*/
 	--light_00: #000000;
@@ -13,6 +13,13 @@
 	--light_50: #7f7f7f;
 	--light_75: #afafaf;
 	--light_100: #ffffff;
+
+	/*Accent Colors*/
+	--accent_0: #000000;
+	--accent_25: #3f001f;
+	--accent_50: #7f003f;
+	--accent_75: #af007f;
+	--accent_100: #ff00af;
 
 	/*Other:*/
 	--header_height: 128px;
@@ -459,12 +466,12 @@ Layout:
 }
 
 .multi-level_dropdown ul {
-	background-color: var(--light_25);
-	border-radius: 8px;	
+	background-color: var(--accent_25);
+	border-radius: 8px;
 }
 
 .multi-level_dropdown li:hover, .multi-level_dropdown li:focus-within {
-	background-color: var(--light_50);
+	background-color: var(--accent_50);
 	/*selected item visible by lighter background*/
 	border-radius: 8px;
 }

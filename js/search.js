@@ -11,7 +11,7 @@ function loadHTML(path, callback) {
 document.getElementById("search_form").addEventListener("submit", function (event) {
 	event.preventDefault();
 	const search = document.getElementById("search").value.toLowerCase();
-	loadHTML("sitemap.html", function (data) { // load the sitemap html
+	loadHTML("templates/sitemap.html", function (data) { // load the sitemap html
 		// the loaded sitemap is a string
 		const sitemap = document.createElement("div") // a new DOM is created
 		sitemap.innerHTML = data // the string will be inserted, this way it is a DOM

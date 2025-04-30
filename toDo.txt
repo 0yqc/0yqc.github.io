@@ -8,4 +8,11 @@ Rework Seacrh
 directory listings
 - manual index.html files
 
-collapsable sections
+collapsable sections / sitemap
+
+better mobile layout
+- navigation dropdown width / maybe like Rebrickable
+- header items
+
+navigation dropdown
+- Fix tab not working on admin, code
