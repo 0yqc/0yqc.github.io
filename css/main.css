@@ -258,24 +258,12 @@ input[type=search] {
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (max-width: 1000px) {
-	#breadcrumb {
-		/*hide breadcrumb navigation*/
-		display: none;
-	}
-}
+/*will be done with header redo*/
 
-@media only screen and (max-width: 850px) {
-	#header_tdLastModified {
-		/*hide right part of header (last modified)*/
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 550px) {
-	#header_logo {
-		/*hide logo on small width, to prefer the navigation dropdown*/
-		display: none;
+@media only screen and (max-width: 650px) {
+	body {
+		text-align: left;
+		/*remove justify align, as it starts to look bad*/
 	}
 }
 
@@ -459,8 +447,6 @@ Layout:
 	/*no bullets*/
 	width: 256px;
 	/*standard uniform width*/
-	max-width: 25vw;
-	/*max 1/4 of viewport (screen) for smaller screens*/
 	padding: 12px;
 	/*padding (inside element)*/
 }

@@ -26,7 +26,7 @@ function loadHTML(path, callback) {
 }
 
 function insertSitemap() {
-    loadHTML("templates/sitemap.html", function (data) {
+    loadHTML("/templates/sitemap.html", function (data) {
         const sitemap = document.getElementsByClassName("sitemap")
         // set data for each element
         Array.from(sitemap).forEach(element => {
@@ -35,7 +35,7 @@ function insertSitemap() {
     })
 }
 
-loadHTML("templates/header.html", function (data) {
+loadHTML("/templates/header.html", function (data) {
     document.getElementById("header").innerHTML = data
     document.getElementById("breadcrumb").innerHTML = text_navigator;
     document.getElementById("last_modified").innerHTML = new Date(document.lastModified).toLocaleDateString("en-us", {
@@ -45,12 +45,6 @@ loadHTML("templates/header.html", function (data) {
     insertSitemap() // insert the sitemap after the header is fully loaded.
 });
 
-loadHTML("templates/footer.html", function (data) {
+loadHTML("/templates/footer.html", function (data) {
     document.getElementById("footer").innerHTML = data
-    document.getElementById("newsletter").addEventListener("submit", function (event) {
-        // event listener for the newsletter
-        event.preventDefault();
-        const email = document.getElementById("email").value;
-        window.location.href = "mailto:0yqc@duck.com?subject=Newsletter Signup for " + email + "&body=" + email
-    })
 });

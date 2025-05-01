@@ -1,0 +1,107 @@
+{
+    "py": {
+        "sitemap_json.py": null,
+        "sitemap_seo.py": null
+    },
+    "pi_art": {
+        "index.html": null
+    },
+    "robots.txt": null,
+    "privacy": {
+        "index.html": null
+    },
+    "README.md": null,
+    "CONTRIBUTING.md": null,
+    "tracker": {
+        "index.html": null
+    },
+    "sitemap.txt": null,
+    "404.html": null,
+    "lego": {
+        "mocs": {
+            "index.html": null
+        },
+        "index.html": null
+    },
+    "credits": {
+        "index.html": null
+    },
+    "socials": {
+        "index.html": null
+    },
+    "search": {
+        "index.html": null
+    },
+    "request_templates.txt": null,
+    "rng": {
+        "index.html": null
+    },
+    "0yNws": {
+        "2025": {
+            "04": {
+                "0x00": {
+                    "index.html": null
+                }
+            }
+        }
+    },
+    "tmp.html": null,
+    "js": {
+        "broken_link.js": null,
+        "template.js": null,
+        "search.js": null,
+        "contact_form.js": null,
+        "tracker.js": null
+    },
+    "license.txt": null,
+    "localServer.sh": null,
+    "toDo.txt": null,
+    "css": {
+        "main_old.css": null,
+        "single": {
+            "search.css": null
+        },
+        "main.css": null
+    },
+    ".github": {
+        "ISSUE_TEMPLATE": {
+            "bug-report.md": null,
+            "feature-request.md": null
+        }
+    },
+    "favicon.ico": null,
+    "media": {
+        "index.html": null,
+        "logo": {
+            "black.svg": null,
+            "white.svg": null,
+            "drawn_white.svg": null,
+            "favicon.svg": null,
+            "drawn_black.svg": null
+        },
+        "background": {
+            "main.jpg": null,
+            "main.png": null
+        },
+        "tmp": {},
+        "pi_art": {
+            "pi.svg": null
+        }
+    },
+    "templates": {
+        "sitemap.html": null,
+        "redir.html": null,
+        "footer.html": null,
+        "main.html": null,
+        "sitemap.json": null,
+        "header.html": null,
+        "dir_list.html": null
+    },
+    "index.html": null,
+    "sitemap": {
+        "index.html": null
+    },
+    "contact": {
+        "index.html": null
+    }
+}
