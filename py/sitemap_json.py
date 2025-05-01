@@ -5,7 +5,7 @@ import json
 
 def gen(directory):
 	json_sitemap = {} # init, for each resursive
-	for item in os.listdir(directory): # loop through each subfolder
+	for item in sorted(os.listdir(directory)): # loop through each subfolder, sort it since it's not sorted
 		if item == ".git":
 			continue # skip through git folder
 		path = os.path.join(directory, item) # construct path (root + subdirectory/file)

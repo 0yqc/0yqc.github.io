@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+	<channel>
+		<title>0yNws</title>
+		<link>https://0yqc.github.io/0yNws/</link>
+		<description>
+			0yNws: The Newsletter from 0yqc.github.io.
+		</description>
+		<item>
+			<title>Template</title>
+			<link>https://0yqc.github.io/0yNws/XXX</link>
+			<description>
+				This is a template item, used to indicate the formatting for further elements.
+			</description>
+		</item>
+	</channel>
+
+</rss>

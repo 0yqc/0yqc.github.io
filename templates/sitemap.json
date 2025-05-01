@@ -1,40 +1,9 @@
 {
-    "py": {
-        "sitemap_json.py": null,
-        "sitemap_seo.py": null
-    },
-    "pi_art": {
-        "index.html": null
-    },
-    "robots.txt": null,
-    "privacy": {
-        "index.html": null
-    },
-    "README.md": null,
-    "CONTRIBUTING.md": null,
-    "tracker": {
-        "index.html": null
-    },
-    "sitemap.txt": null,
-    "404.html": null,
-    "lego": {
-        "mocs": {
-            "index.html": null
-        },
-        "index.html": null
-    },
-    "credits": {
-        "index.html": null
-    },
-    "socials": {
-        "index.html": null
-    },
-    "search": {
-        "index.html": null
-    },
-    "request_templates.txt": null,
-    "rng": {
-        "index.html": null
+    ".github": {
+        "ISSUE_TEMPLATE": {
+            "bug-report.md": null,
+            "feature-request.md": null
+        }
     },
     "0yNws": {
         "2025": {
@@ -45,63 +14,93 @@
             }
         }
     },
-    "tmp.html": null,
-    "js": {
-        "broken_link.js": null,
-        "template.js": null,
-        "search.js": null,
-        "contact_form.js": null,
-        "tracker.js": null
+    "404.html": null,
+    "CONTRIBUTING.md": null,
+    "README.md": null,
+    "contact": {
+        "index.html": null
     },
-    "license.txt": null,
-    "localServer.sh": null,
-    "toDo.txt": null,
+    "credits": {
+        "index.html": null
+    },
     "css": {
+        "main.css": null,
         "main_old.css": null,
         "single": {
             "search.css": null
-        },
-        "main.css": null
-    },
-    ".github": {
-        "ISSUE_TEMPLATE": {
-            "bug-report.md": null,
-            "feature-request.md": null
         }
     },
     "favicon.ico": null,
-    "media": {
+    "giscus.json": null,
+    "index.html": null,
+    "js": {
+        "broken_link.js": null,
+        "contact_form.js": null,
+        "search.js": null,
+        "template.js": null,
+        "tracker.js": null
+    },
+    "lego": {
         "index.html": null,
-        "logo": {
-            "black.svg": null,
-            "white.svg": null,
-            "drawn_white.svg": null,
-            "favicon.svg": null,
-            "drawn_black.svg": null
-        },
+        "mocs": {
+            "index.html": null
+        }
+    },
+    "license.txt": null,
+    "localServer.sh": null,
+    "media": {
         "background": {
             "main.jpg": null,
             "main.png": null
         },
-        "tmp": {},
+        "logo": {
+            "black.svg": null,
+            "drawn_black.svg": null,
+            "drawn_white.svg": null,
+            "favicon.svg": null,
+            "white.svg": null
+        },
         "pi_art": {
             "pi.svg": null
-        }
+        },
+        "tmp": {}
     },
-    "templates": {
-        "sitemap.html": null,
-        "redir.html": null,
-        "footer.html": null,
-        "main.html": null,
-        "sitemap.json": null,
-        "header.html": null,
-        "dir_list.html": null
+    "pi_art": {
+        "index.html": null
     },
-    "index.html": null,
+    "privacy": {
+        "index.html": null
+    },
+    "py": {
+        "sitemap_json.py": null
+    },
+    "request_templates.txt": null,
+    "rng": {
+        "index.html": null
+    },
+    "robots.txt": null,
+    "search": {
+        "index.html": null
+    },
     "sitemap": {
         "index.html": null
     },
-    "contact": {
+    "sitemap.txt": null,
+    "socials": {
+        "index.html": null
+    },
+    "templates": {
+        "dir_list.html": null,
+        "footer.html": null,
+        "header.html": null,
+        "main.html": null,
+        "redir.html": null,
+        "sitemap.html": null,
+        "sitemap.json": null
+    },
+    "tmp.html": null,
+    "toDo.txt": null,
+    "tracker": {
         "index.html": null
     }
 }

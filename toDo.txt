@@ -19,3 +19,7 @@ navigation dropdown
 - Fix tab not working on admin, code
 
 auto seo sitemap.txt gen by python
+
+server-wide commenting
+- store script in template.js, etc.
+- just make divs with class="giscus" (?)
