@@ -20,6 +20,7 @@
         </p>
         <div class="center">
             <form id="contact_form">
+                <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.min.js"></script>
                 <label for="name">Your Name:¹</label><br>
                 <input type="text" name="name" id="name"><br>
                 <label for="email">Your email adress (for further questions)²</label><br>
@@ -30,7 +31,7 @@
                 <input type="radio" name="type" id="other" value="Message"><label for="other">Other</label><br>
                 <label for="message">Your message:</label><br>
                 <textarea required name="message" id="message" rows="5"></textarea><br><br>
-                <input type="submit" value="Submit Form (Opens Mail Program)">
+                <input type="submit" value="Submit Form (Supabase)">
                 <p>
                     ¹: The Name you want me to call you. May be empty. <br>
                     ²: If different from the email you send from. May be empty.
