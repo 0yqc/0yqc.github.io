@@ -25,5 +25,4 @@ server-wide commenting
 - just make divs with class="giscus" (?)
 
 change system away from email
-- pastebin like service
 - keep github commenting?
