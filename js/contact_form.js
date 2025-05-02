@@ -7,5 +7,5 @@ document.getElementById("contact_form").addEventListener("submit", function (eve
     var message = unformatedMessage.replace(/\n/g, '%0D%0A');
     // /.../ is Regex, \n is newline in HTML, g is globally, will be replaced with: %0D%0A in Unicode
 
-    window.location.href = "mailto:0yqc@duck.com?subject=Website " + type + " by " + name + " (" + email + ")&body=" + message
+    
 })

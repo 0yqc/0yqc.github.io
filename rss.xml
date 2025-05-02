@@ -9,9 +9,17 @@
 		</description>
 		<item>
 			<title>Template</title>
-			<link>https://0yqc.github.io/0yNws/XXX</link>
+			<link>https://0yqc.github.io/0yNws/2025/</link>
 			<description>
 				This is a template item, used to indicate the formatting for further elements.
+			</description>
+		</item>
+
+		<item>
+			<title>0yNws:2025.04.0x00</title>
+			<link>https://0yqc.github.io/0yNws/2025/04/0x00</link>
+			<description>
+				First 0yNws: Big Changes
 			</description>
 		</item>
 	</channel>

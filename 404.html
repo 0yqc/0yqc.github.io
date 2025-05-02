@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/single/search.css">
     <title>404 Not Found | 0yQc.github.io</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                 <label for="notes">(Optional) Any additional notes for me?</label><br>
                 <textarea name="notes" id="notes" rows="5"></textarea>
                 <p>Thank You!</p>
-                <input type="submit" name="submit" id="submit" value="Submit Broken Link (Opens Mail Program)">
+                <input type="submit" name="submit" id="submit" value="Submit Broken Link (Supabase)">
             </form>
         </div>
     </div>
@@ -55,7 +56,7 @@
             window.location.href = window.location.pathname.toLowerCase();
         }
     </script>
-    <script src="js/broken_link.js"></script>
+    <script src="js/broken_link.js" defer></script>
     <script src="js/template.js"></script>
 </body>
 

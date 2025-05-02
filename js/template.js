@@ -48,3 +48,17 @@ loadHTML("/templates/header.html", function (data) {
 loadHTML("/templates/footer.html", function (data) {
     document.getElementById("footer").innerHTML = data
 });
+
+// giscus script is inserted to enable commenting in <div id="comments">
+try {
+document.getElementById("comments").innerHTML = `
+    <script src="https://giscus.app/client.js" data-repo="0yqc/0yqc.github.io" data-repo-id="R_kgDONOV0ow"
+            data-category="Giscus Comments" data-category-id="DIC_kwDONOV0o84CpqLZ" data-mapping="pathname"
+            data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top"
+            data-theme="dark_high_contrast" data-lang="en" crossorigin="anonymous" async>
+            </script>
+        <!--Config: /giscus.json-->
+`
+} catch {
+    console.log("Comments not loaded, no comment block available")
+}
