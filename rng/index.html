@@ -27,7 +27,9 @@
 			} else {
 				document.getElementById("description").classList.add("hidden")
 				const digits = seed.match(/\d/g) // ReGeX to only match digits (/.../ is for ReGeX, g makes it globally, so not just first occurence) 
-				document.getElementById("rng").innerHTML = digits.join("") // Just join each element
+				number = digits.join("") // Just join each element
+				document.getElementById("rng").innerHTML = number
+				document.title = number + "; RNG | 0yqc.github.io"
 			}
 		</script>
 	</div>

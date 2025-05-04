@@ -48,4 +48,3 @@ loadHTML("/templates/header.html", function (data) {
 loadHTML("/templates/footer.html", function (data) {
     document.getElementById("footer").innerHTML = data
 });
-

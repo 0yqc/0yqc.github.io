@@ -447,10 +447,20 @@ Layout:
 .multi-level_dropdown li {
 	list-style: none;
 	/*no bullets*/
-	width: 256px;
-	/*standard uniform width*/
 	padding: 12px;
 	/*padding (inside element)*/
+}
+
+.multi-level_dropdown>ul>li, .multi-level_dropdown>ul>li>ul>li {
+	width: 256px;
+	/*width for root and first dropdown*/
+}
+
+.multi-level_dropdown li li li {
+	white-space: nowrap;
+	/*as narrow as possible*/
+	min-width: 128px;
+	/*not too narrow*/
 }
 
 .multi-level_dropdown ul {

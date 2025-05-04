@@ -33,7 +33,6 @@
         }
     },
     "favicon.ico": null,
-    "giscus.json": null,
     "index.html": null,
     "js": {
         "broken_link.js": null,
@@ -81,7 +80,6 @@
         "index.html": null
     },
     "robots.txt": null,
-    "rss.xml": null,
     "search": {
         "index.html": null
     },
