@@ -4,15 +4,6 @@ var link = ""; //set link starting point to / to add further elements
 for (i = 0; i < path_items.length; i++) { //Iterate through every path element
     link = link + "/" + path_items[i]; //set the current link, with the link before, and the new path element
     text_navigator = text_navigator + " > <a href=" + link + ">" + path_items[i] + "</a>";
-    /*
-    *   text_navigator = text_navigator +: Add to the text
-    *   >: As arrow symbol
-    *   <a href=": Start Link
-    *   + link: use link as the href
-    *   + ">": End <a> tag
-    *   + path[i]: Add the current path element
-    *   + "</a>": Close the <a> tag
-    */
 }
 
 // Declare function
