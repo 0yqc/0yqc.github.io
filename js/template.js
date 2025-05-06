@@ -23,6 +23,14 @@ function insertSitemap() {
         Array.from(sitemap).forEach(element => {
             element.innerHTML = data;
         });
+        Array.from(document.getElementsByClassName("sitemap_admin")).forEach(element => {
+            element.classList.add("hidden")
+        })
+        if (window.localStorage.getItem("admin") == "true") {
+            Array.from(document.getElementsByClassName("sitemap_admin")).forEach(element => {
+                element.classList.remove("hidden")
+            })
+        }
     })
 }
 

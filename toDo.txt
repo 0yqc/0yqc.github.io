@@ -4,7 +4,7 @@ directory listings
 - fetch from /templates/sitemap.json
 
 custom commenting system
-
+- supabase as backend
 
 #----- long-term -----#
 
