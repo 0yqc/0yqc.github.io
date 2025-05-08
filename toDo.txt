@@ -6,6 +6,9 @@ directory listings
 custom commenting system
 - supabase as backend
 
+tracker.js
+- switch from email to supabase
+
 #----- long-term -----#
 
 new search
