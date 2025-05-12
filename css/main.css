@@ -80,7 +80,7 @@ img {
 
 /* HEADER / FOOTER */
 
-header, footer, h1, h2, h3, h4, h5, h6 {
+header, footer, h2, h3, h4, h5, h6 {
 	font-family: monospace;
 	text-transform: lowercase;
 	/*Both to create emphasize them. To some degree also nostalgic to my first version.*/
