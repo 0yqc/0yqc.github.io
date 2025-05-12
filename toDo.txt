@@ -2,6 +2,7 @@
 
 directory listings
 - fetch from /templates/sitemap.json
+	- smarter way to save templates.json
 
 custom commenting system
 - supabase as backend

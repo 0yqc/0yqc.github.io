@@ -15,15 +15,12 @@ if (path != path.toLowerCase()) {
 }
 
 // display current url
-document.getElementById("site_url").innerHTML = "<a href=\"" + path + "\">" + path + "</a>"
+Array.from(document.getElementsByClassName("site_url")).forEach(element => {
+	element.innerHTML = path
+});
 
 // directory listing
 
 load_file("/templates/sitemap.json", function (data) {
-	const sitemap = JSON.parse(data)
-	clean_path = path.slice(1) // slices off first / char
-	if (sitemap.hasOwnProperty(clean_path)) { // checks if there is object clean_path
-		// must be dir w/o index.html, as files open
-		// add dir list logic
-	}
+	
 });
