@@ -48,6 +48,6 @@ loadHTML("/templates/footer.html", function (data) {
     document.getElementById("footer").innerHTML = data
 });
 
-if (window.location.href.startsWith("https://0yqc.github.io")) { // this is the old github page, I'd rather use the new Cloudflare page at https://0yqc.pages.dev/
+if (window.location.href.startsWith("http://0yqc.github.io")) { // this is the old github page, I'd rather use the new Cloudflare page at https://0yqc.pages.dev/
     window.location.href = window.location.href.replace("0yqc.github.io", "0yqc.pages.dev")
 }
