@@ -20,7 +20,7 @@ f"""
 def gen(directory):
 	for item in sorted(os.listdir(directory)): # loop through each subfolder, sort it since it's not sorted
 		path = root + os.path.join(directory, item)
-		full_path = "https://0yqc.github.io/" + os.path.relpath(path, root).replace(os.sep, "/")
+		full_path = "https://0yqc.gitlab.io/" + os.path.relpath(path, root).replace(os.sep, "/")
 		if item == ".git":
 			continue # skip through git folder as it contains much unneccessary files
         
